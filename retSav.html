@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            Retirement Saving
+        </title>
+        <style type = "text/css">
+            #heading{
+                color:lightcoral;
+                text-align: center; 
+            }
+
+            #getInput{
+                background-color:lightyellow;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            .error{
+                color:red;
+            }
+
+            #result{
+                position: absolute;
+                left:150;
+                right:150;
+                bottom: 120;
+                border: solid 1px;
+            }
+            #container{
+                width: 500px;
+                height: 500px;  
+                border: solid 3px grey;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #goalMet{
+                border: solid 1px black;
+                background-color: lightcyan;
+                height: 100px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        </style>
+        <script src = "retSav.js"></script>
+    </head>   
+    <body>
+        <h1 id = "heading">Retirement Saving Calculator</h1>
+        <div id = "container">
+            <div id = "getInput">
+                <p>Enter your age(0-100]:<input id = "age"></p> <span class = "error" id = "ageErr"></span> 
+                <p>Enter your salary:<input id = "salary"></p> <span class = "error" id = "salaryErr"></span>
+                <p>Enter your percentage of salary saved (0-100]:<input id = "percentage"></p> <span class = "error" id = "percErr"></span>
+                <p>Enter your savings goal: <input id = "goal"></p> <span class = "error" id = "goalErr"> </span>
+                <p><button onclick = "validate()">Calculate</button></p>
+            </div>
+            <div id = "result">
+                <p>You will be at the age of <span id = "time"></span></p>
+            </div>
+            <div id = goalMet>
+                <p style = "font-weight: bold; color:darkcyan; text-align: center; ">Did I meet the saving goal?</p>
+                <p id = "met"></p>
+            </div>
+        </div>
+        <h2>Click <a href = "BMI-INDEX.html">BMI INDEX</a> to calculate BMI index.</h2>
+    </body>  
+</html>
