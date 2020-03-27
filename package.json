@@ -13,9 +13,11 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "coveralls": "^3.0.11",
     "jest": "^25.1.0"
   },
   "dependencies": {
+    "coverage": "^0.4.1",
     "jest-junit": "^10.0.0"
   }
 }
