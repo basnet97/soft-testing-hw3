@@ -60,7 +60,7 @@ function validate(){
 
     }
 
-    function calculateBMI(heightFT, heightIN, weight)
+    function calculateBMI(heightFT, heightIN, weight) //calculates BMI index
     {
         var weightKg = parseFloat(weight) * 0.453592;
         var temp = parseInt(heightFT) + parseFloat(heightIN) / 12;
