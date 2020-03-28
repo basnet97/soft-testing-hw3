@@ -6,7 +6,7 @@
     "start": "webpack",
     "test": "jest ",
     "test:coverage": "jest --coverage",
-    "test:coveralls":"jest --coverage && --coverageReporters=text-lcov | coveralls"
+    "test:coveralls":"jest --coverage && --coverageReporters=text-lcov | coveralls",
     "homepage": "https://basnet97.github.io/soft-testing-hw3/"
   },
   "keywords": [],
