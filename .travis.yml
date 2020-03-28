@@ -4,6 +4,9 @@ node_js:
   - node
 install:
   - npm ci
+cache:
+  directories:
+  - node_modules
 script: echo "Running tests against $(node -v)..."
 jobs:
   include:
@@ -15,3 +18,5 @@ deploy:
   skip_cleanup: true
   github_token: $github_token
   local_dir: build
+  on:
+    branch: master
